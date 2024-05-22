@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./font-awesome-4.7.0/css/font-awesome.css">
+    <style>
+        *{
+            padding: 0px;
+            margin: 0px;
+            box-sizing: border-box;
+        }
+        main{
+            background-color: black;
+        }
+        /* '''''''''''''''''''''''''''''''''''''''''''''''''header''''''''''''''''''''''''''''''''''''''''' */
+        #header{
+            height: 100px;
+            width: 100%;
+            background-color: black;
+            padding: 0px 10px 0px 10px;
+            display: flex;
+            align-items: center;
+            position:sticky;
+            top: 0px;
+        }
+        #header ul{
+            display: flex;
+            align-items: center; 
+        }
+        #header a{
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            padding: 5px 15px;
+        }
+       #header nav {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #header nav span a{
+            font-size: 15px;
+            color: rgb(177, 171, 171);
+        }
+        #header nav span{
+            margin-left: 400px;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        /* '''''''''''''''''''''''''''''''''''''''''''''''marquee div1''''''''''''''''''''''''''''''''' */
+        #div1{
+            height: 600px;
+            width: 100%;
+            border: 1px solid transparent; 
+            background-color: black;
+        }
+        #div1 #mar{
+            height:550;
+            width: 80%;
+            margin-top:50px;
+            margin-left: 10%;
+            border: 1px solid transparent;
+            background-color: transparent;
+        }
+        #div1 #mar #section1{
+            height: 100%;
+            width: 100%;
+            display:inline-block;
+            font-size: 50px;
+            color: white;
+            background-color: transparent;
+        }
+/* ''''''''''''''''''''''''''''''''''''''''''''''''''''''''status sec1''''''''''''''''''''''''''''''''''''''''' */
+        #sec1{
+            width: 100%;
+            height: 300px;
+            border: 1px solid transparent;
+            background-color: black;
+            color: white;
+            align-items: center;
+            padding: 0px 25px 10px 0px;
+            justify-content: start;
+        }
+        #sec1 #status{
+            height: 280px;
+            width: 90%;
+            margin: 10px auto;
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+        }
+        #sec1 .circle{
+            height: 120px;
+            width: 120px;
+            border: 2px solid #f30866;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 0px;
+        }
+        #sec1 .text{
+            height: 200px;
+            width: 120px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            font-size: 18px;
+            color: white;
+            text-align: center;
+            border: 1px solid transparent;
+        }
+        #sec1 .text span{
+               border: 1px solid transparent;
+               margin-top: 10px;
+        }
+        #sec1 .circle img{
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            border: 1px solid transparent;
+        }
+        #sec1 h1{
+            align-self:start;
+            font-size: 35px;
+            margin-left: 50px;
+        }
+        /* '''''''''''''''''''''''''''''''''''''''''''''''''''sec4''''''''''''''''''''''''''''''''''''' */
+        #sec4{
+          	height: 800px;
+          	width: 100%;
+          	background-color: white;
+          	border: 1px solid transparent;
+          	display: flex;
+          	align-items: center;
+          }
+        #sec4 #s1{
+          	height: 700px;
+          	width: 750px;
+          	border: 1px solid transparent;
+          	background-image: url(./assests/sec4children.jpeg);
+          	background-repeat: no-repeat;
+          	background-position: center;
+          	background-size: cover;
+
+          }
+        #sec4 #s2{
+          	height: 400px;
+          	width: 700px;
+            display: flex;
+            margin-left: 15px;
+            flex-direction: column;
+            justify-content: space-evenly;
+          	border: 1px solid transparent; 
+          	background-color: white;
+          }
+        #sec4 #s2 #t1{
+           font-size: .875rem;
+           line-height: 1.5rem;
+           letter-spacing: .15em;
+           color: #747678;
+           font-family: Basis-bold;
+          }
+        #sec4 #s2 #t2{
+          	font-family: Houschka-medium;
+            font-size: 2.5rem;
+            color: #b03c00;
+           }
+        #sec4  #s2 #t3{
+          	font-family: Basis-regular;
+            font-size: 1.125rem;
+            color: #5e6162;
+        }
+        #sec4  #s2 #t4{
+           font-family: Basis-medium;
+           font-size: 1.125rem;
+           color: #000;
+         }
+        /* ''''''''''''''''''''''''''''''''''''''''''''''''''sec5''''''''''''''''''''''''''''''''''''' */
+        #sec5 {
+            width: 100%;
+            height: 800px;
+            border: 1px solid transparent;
+            background-color: black;
+        }
+        #sec5 h1 {
+            color: white;
+            font: 32px;
+            margin: 10px 0px 10px 90px;
+        }
+        #sec5 #main {
+            width: 90%;
+            height: 700px;
+            border: 1px solid transparent;
+            margin: 10px auto;
+            color: white;
+            background-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(./assests/sec5.jpeg);
+        }
+        #sec5 #main #text {
+            width: 320px;
+            height: 300px;
+            border: 1px solid transparent;
+            display: flex;
+            font-size: 35px;
+            flex-direction: column;
+            justify-content: center;
+            margin:40px 0px 0px 250px;
+        }
+        #sec5 #main #text a{
+            text-decoration: none;
+            color: white;
+            font-size: 20px;
+            margin-top: 15px;
+        }
+        #sec5 #text a {
+            width: 150px;
+            height: 50px;
+            border: 1px solid white;
+            border-radius: 40px;
+            display: flex;
+            align-items:center;
+            justify-content: center;
+
+        }
+        #sec5 #main #parent {
+            width: 100%;
+            height: 300px;
+            border: 1px solid transparent;
+            display: flex;
+            justify-content: end;
+        }
+        #sec5 .child {
+            width: 250px;
+            height: 200px;
+            border: 1px solid white;
+            background-color: #000000;
+            padding-top: 15px;
+            margin-top: 200px;
+            margin-left: 20px;
+            line-height: 40px;
+         }
+        #sec5 #child1:hover {
+            border: 2px solid #E94184;
+        }
+        #sec5 #child2:hover {
+            border: 2px solid #E94184;
+        }
+        #sec5  #child3:hover {
+            border: 2px solid #E94184;
+        }
+           
+    /* '''''''''''''''''''''''''''''''''''''''''sec7''''''''''''''''''''''''''''''''''''''''''' */
+        #sec7{
+            width: 100%;
+            height: 100vh;
+            border: 1px solid transparent;
+            margin-top: 50px;
+            background-color: white;
+            font-size: 30px;
+            font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+        #sec7 #container{
+            height: 550px;
+            width:95%;
+            border: 1px solid transparent;
+            display: flex;
+            margin-left: 3%;
+            justify-content: space-between;
+            align-items: center;
+        }
+        #sec7 #container .boxes{
+            height: 500px;
+            width: 310px;
+            border: 1px solid transparent;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: end;
+            padding-bottom: 25px;
+            padding-left: 20px;
+        }
+        #sec7 h1{
+            margin-left:3%;
+            border: 1px solid transparent;
+        }
+        #sec7 #container .boxes span{
+            border: 1px solid transparent;
+            font-size: 15px;
+            display: flex;
+            align-items: center;
+            color: #e41165;
+        }
+        #sec7 #container .boxes h4{
+            font-size: 35px;
+            color: white;
+            margin-bottom: 10px;
+        }
+        #sec7 #container .boxes p{
+            font-size: 15px;
+            color: white;
+            margin-top: 0px;
+            padding-bottom: 10px;
+        }
+        #sec7 #container #box1{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(./assests/box1.jpeg);
+        }
+        #sec7 #container #box2{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(./assests/box2.jpeg);
+        }
+        #sec7 #container #box3{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(./assests/box3.jpeg);
+        }
+        #sec7 #container #box4{
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.7)),url(./assests/box4.jpeg);
+        }
+         /* ''''''''''''''''''''''''''''''''''''''''''sec8'''''''''''''''''''''''''''''''  */
+         #sec8{
+        height: 700px;
+        width: 100%;
+        border: 1px solid transparent;
+        background-color: white;
+       }
+       #main{
+        width: 100%;
+        height: 680px;
+        border: 1px solid transparent;
+        display: flex;
+        align-items: center;
+       }
+       #sec8 #main #text{
+        height: 300px;
+        width: 600px;
+        border: 1px solid transparent;
+        display: flex;
+        margin: 50px 10px 0px 150px;
+        flex-direction: column;
+       }
+       #sec8 #main #text p{
+        font-size: 18px;
+        color:#697579 ;
+        margin-right: 10px;
+       }
+       #sec8 #main #text h3{
+        font-size: 25px;
+        color: orangered;
+       }
+       #sec8 #main #text a{
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+       }
+       #sec8 #main #text a i{
+        font-size: 40px;
+       }
+       #sec8 #main #img{
+        height: 100%;
+        width: 65%;
+        background-image: url(./assests/wood.jpeg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+       }
+    </style>
+</head>
+<body>
+    <main>
+        <header id="header">
+            <nav>
+                <ul type="none">
+                    <li><img src="./assests/dark-theme.svg" alt=""></li>
+                    <li><a href="">What we do</a></li>
+                    <li><a href="">Who we are</a></li>
+                    <li><a href="">Insights</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Investors</a></li>
+                </ul>
+                <span> 
+                   <a href="">CONTACT US</a>
+                   <a href="">TCS WORLDWIDE</a>
+                   <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
+                   <a href=""><img src="./assests/Tata_logo.svg.png" alt="" height="50px"></a>
+                </span>
+            </nav>
+        </header>
+        <div id="div1">
+            <marquee id="mar" behavior=""  scrollamount="40" direction="">
+                <section id="section1">
+                    <p>TCS Survey: The future of operations</p>
+                    <img src="./assests/marquee1.jpeg" alt="" height="400px" width="80%">         
+                </section>
+                <section id="section1">
+                    <p>Collaboration for transformation</p>
+                    <img src="./assests/marquee2.jpeg" alt="" height="400px" width="80%">>         
+                </section>
+                <section id="section1">
+                    <p>Banking beyond bounaries</p>
+                    <img src="./assests/marquee3.jpeg" alt="" height="400px" width="80%">>         
+                </section>
+                <section id="section1">
+                    <p>Progress with purpose</p>
+                    <img src="./assests/marquee4.jpeg" alt="" height="400px" width="80%">>         
+                </section>
+            </marquee>
+        </div>
+        <section id="sec1">
+            <h1>Snapshots</h1>
+            <div id="status">
+                <div class="text">
+                    <div id="circles1" class="circle">
+                        <img src="./assests/cir1.jpeg" alt="">
+                   </div>
+                  <span> Better tickets</span>
+                </div>
+                <div class="text">
+                    <div id="circles2" class="circle">
+                       <img src="./assests/cir2.jpeg" alt="">
+                     </div>
+                     <span>The right track</span>
+                </div>
+                <div class="text">
+                    <div id="circles3" class="circle">
+                        <img src="./assests/cir3.jpeg" alt="">
+                    </div>
+                    <span>Power up</span>
+                </div>
+                <div class="text">
+                    <div id="circles4" class="circle">
+                        <img src="./assests/cir4.jpeg" alt="">
+                    </div>
+                    <span>Neural manufactiring</span>
+                </div>
+                <div class="text">
+                    <div id="circles5" class="circle">
+                        <img src="./assests/cir5.jpeg" alt="">
+                    </div>
+                    <span>Insurance bots</span>
+                </div>
+                <div class="text">
+                    <div id="circles6" class="circle">
+                        <img src="./assests//cir6.jpeg" alt="">
+                    </div>
+                    <span>Ahead with Med</span>
+                </div>
+                <div class="text">
+                    <div id="circles7" class="circle">
+                        <img src="./assests/cir7.jpeg" alt="">
+                    </div>
+                    <span>A digital sugar rush</span>
+                </div>
+                <div class="text">
+                    <div id="circles8" class="circle">
+                        <img src="./assests/cir8.jpeg" alt="">
+                    </div>
+                    <span>Virtual worlds, real privacy concerns</span>
+                </div>
+            </div>
+        </section>
+        <section id="sec2">
+        </section>
+        <section id="sec4">
+            <div id="s1"></div>
+            <div id="s2">
+                <div id="t1">WHO WE ARE</div>
+                <div id="t2">We build greater futures through innovation and collective knowledge.</div>
+                <div id="t3">TCS is an IT services, consulting and business solutions organization that has been partnering with many of the world’s largest businesses in their transformation journeys for over 50 years.</div>
+                <div id="t4">Get to know us <i id="sec8ico" class="fa fa-arrow-circle-right" aria-hidden="true"></i></div>
+            </div>
+        </section>
+        <div id="sec5">
+            <h1>Discover the TCS difference</h1>
+            <div id="main">
+                <div id="text">
+                    <h5>Our global study finds that cloud and AI are a priority despite headwinds</h5>
+                    <a href="https://www.tcs.com/who-we-are/newsroom/press-release/tcs-cloud-study-betting-on-ai-global-c-suite-sticking-with-cloud-despite-macro-headwinds">
+                        Learn more</a>
+                </div>
+                <div id="parent">
+                    <div class="child" id="child1">
+                        <h3>AI & CLOUD 75% Of Organization investd In AI & ML IN the
+                            past 2years</h3>
+                    </div>
+                    <div class="child" id="child2">
+                        <h3>RECOGNITION IDC Marketscape lauds our holistic approch</h3>
+                    </div>
+                    <div class="child" id="child3">
+                        <h3>TCS BANCS Building a bank for the future</h3>
+                    </div>
+                
+                </div>
+    
+            </div>
+        </div>
+        <section id="sec7">
+            <div><h1>Belief in action</h1></div>
+            <div id="container">
+                <div class="boxes" id="box1">
+                    <h4>A new, nimble NWC</h4>
+                    <p>Saudi Arabia’s National Water Company consolidates and transforms comprehensively </p>
+                    <span><img src="./assests/read more.svg" alt="">READ MORE</span>
+                </div>
+                <div class="boxes" id="box2">
+                    <h4>Gaming Momentum with AL</h4>
+                    <p>South-African insurer Momentum Metropolitan delivers chatbot service automation and better CX</p>
+                    <span><img src="./assests/read more.svg" alt="">READ MORE</span>
+                </div>
+                <div class="boxes" id="box3">
+                    <h4>Kautex kickstart automation</h4>
+                    <p>German automotive supplier develops end-to-end software capability</p>
+                    <span><img src="./assests/read more.svg" alt="">READ MORE</span>
+                </div>  
+                <div class="boxes" id="box4">
+                    <h4>colruyt's retail revitalized</h4>
+                    <p>TCS helps deliver on brand promise with next-gen pricing engine</p>
+                    <span><img src="./assests/read more.svg" alt="">READ MORE</span>
+                </div>  
+            </div>   
+        </section>
+        <section id="sec8">
+            <div id="main">
+                <div id="text">
+                    <p>WHAT WE DO</p>
+                    <h3 id="h3">TCS transforms businesses through technology.</h3>
+                    <p>We help businesses successfully navigate digital transformation and drive real growth, drawing on
+                    the combined power of experience and contextual knowledge, across a vast ecosystem of expertise.</p>
+                    <a href="https://www.tcs.com/what-we-do">Get to know us <i id="sec8ico" class="fa fa-arrow-circle-right" aria-hidden="true"></i></a>
+                </div>
+                
+            </div>
+        </section>
+
+    </main>
+</body>
+</html>
